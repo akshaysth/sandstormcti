@@ -1,21 +1,22 @@
 import { useState } from "react";
+import Logo from "../assets/logo.svg";
 
 function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [userOpen, setUserOpen] = useState(false);
+  // const [userOpen, setUserOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
-  const toggleUserMenu = () => {
-    setUserOpen(!userOpen);
-  };
+  // const toggleUserMenu = () => {
+  //   setUserOpen(!userOpen);
+  // };
 
   return (
-    <nav className="bg-gray-800">
+    <nav className="bg-sky-50">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div className="relative flex h-16 items-center justify-between">
+        <div className="relative flex h-20 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <button
               type="button"
@@ -58,61 +59,33 @@ function Navbar() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
-              <img className="h-8 w-auto" src="/logo.svg" alt="Your Company" />
+              <img className="h-12 w-auto" src={Logo} alt="Your Company" />
             </div>
-            <div className="hidden sm:ml-6 sm:block">
+            <div className="hidden sm:ml-6 sm:block sm:my-auto">
               <div className="flex space-x-4">
                 <a
                   href="#"
-                  className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                  className="bg-sky-700 text-white nav-item text-sm font-medium"
                   aria-current="page"
                 >
-                  Dashboard
+                  Home
                 </a>
                 <a
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  className="nav-item text-sky-700 font-medium text-sm active:bg-sky-700 active:text-white hover:outline-sky-700 focus-visible:outline-sky-700"
                 >
-                  Team
+                  Blog
                 </a>
                 <a
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  className="nav-item text-sky-700 font-medium text-sm active:bg-sky-700 active:text-white hover:outline-sky-700 focus-visible:outline-sky-700"
                 >
                   Projects
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-                >
-                  Calendar
                 </a>
               </div>
             </div>
           </div>
-          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <button
-              type="button"
-              className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-            >
-              <span className="absolute -inset-1.5"></span>
-              <span className="sr-only">View notifications</span>
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
-                />
-              </svg>
-            </button>
-
+          {/* <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <div className="relative ml-3">
               <div>
                 <button
@@ -173,7 +146,7 @@ function Navbar() {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -181,28 +154,22 @@ function Navbar() {
         <div className="space-y-1 px-2 pb-3 pt-2">
           <a
             href="#"
-            className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+            className="bg-sky-700 text-white block rounded-md px-3 py-2 text-base font-medium"
             aria-current="page"
           >
-            Dashboard
+            Home
           </a>
           <a
             href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+            className="text-sky-700 hover:bg-sky-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
           >
-            Team
+            Blog
           </a>
           <a
             href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+            className="text-sky-700 hover:bg-sky-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
           >
             Projects
-          </a>
-          <a
-            href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-          >
-            Calendar
           </a>
         </div>
       </div>
