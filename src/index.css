@@ -23,3 +23,7 @@
 .nav-item:focus-visible {
   outline-offset: 0.05em;
 }
+
+h1 {
+  @apply text-3xl;
+}

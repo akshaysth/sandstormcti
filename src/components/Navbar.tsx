@@ -61,7 +61,7 @@ function Navbar() {
             <div className="flex flex-shrink-0 items-center">
               <img className="h-12 w-auto" src={Logo} alt="Your Company" />
             </div>
-            <div className="hidden sm:ml-6 sm:block sm:my-auto">
+            <div className="hidden sm:mx-auto sm:block sm:my-auto">
               <div className="flex space-x-4">
                 <a
                   href="#"

@@ -10,10 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "markdown-it-prism": "^2.3.0",
+    "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@pity/vite-plugin-react-markdown": "^0.1.1",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
